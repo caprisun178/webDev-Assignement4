@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<main>
+    <!-- Player Throw -->
+    <section class="panel" id="player-section">
+        <h2>Player Throw</h2>
+
+        <div class="throw-grid">
+            <figure class="throw-option" data-throw="rock">
+                <button type="button" class="throw-btn">
+                    <img class="images" src="images/rock.PNG" alt="Rock" width="140" height="140" />
+                </button>
+                <figcaption>Rock</figcaption>
+            </figure>
+
+            <figure class="throw-option" data-throw="paper">
+                <button type="button" class="throw-btn">
+                    <img src="images/paper.PNG" alt="Paper" width="140" height="140" />
+                </button>
+                <figcaption>Paper</figcaption>
+            </figure>
+
+            <figure class="throw-option" data-throw="scissors">
+                <button type="button" class="throw-btn">
+                    <img src="images/scissors.PNG" alt="Scissors" width="140" height="140" />
+                </button>
+                <figcaption>Scissors</figcaption>
+            </figure>
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="playAgainBtn">Play Again</button>
+        </div>
+    </section>
+
+    <!-- Computer Throw -->
+    <section class="panel" id="computer-section">
+        <h2>Computer Throw</h2>
+
+        <figure class="computer-box">
+            <img id="computerImg" src="images/question-mark.PNG"/>
+            <figcaption id="computerText">Waiting...</figcaption>
+        </figure>
+    </section>
+
+    <!-- Outcome -->
+    <section class="panel" id="outcome-section">
+        <h2>Outcome</h2>
+        <p id="outcomeText">Choose rock, paper, or scissors to start.</p>
+    </section>
+
+    <!-- Score -->
+    <section class="panel" id="score-section">
+        <h2>Score</h2>
+
+        <p>Wins: <span id="winsCount">0</span></p>
+        <p>Losses: <span id="lossesCount">0</span></p>
+        <p>Ties: <span id="tiesCount">0</span></p>
+
+        <div class="buttons">
+            <button type="button" id="resetScoreBtn">Reset Score</button>
+        </div>
+    </section>
+</main>
+
+
+    
+</body>
+</html>

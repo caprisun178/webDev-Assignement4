@@ -1,0 +1,25 @@
+.images{
+    width: 140px 
+}
+
+.throw-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.throw-btn {
+  background: none;
+  border: 3px solid transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.selected {
+  border: 3px solid blue;
+}
+
+#computerImg {
+  width: 180px;
+  height: 180px;
+}
